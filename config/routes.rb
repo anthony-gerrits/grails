@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 
   get 'about' => "pages#about"
 
+  get 'history' => "pages#history"
+
+  get 'staff' => 'pages#staff'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

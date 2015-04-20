@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def history
+  end
+
+  def staff
+  end
 end

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'contact_form/new'
+
+  get 'contact_form/create'
+
   devise_for :users
   get 'pages/contact'
 
@@ -15,7 +19,11 @@ Rails.application.routes.draw do
 
   get 'history' => "pages#history"
 
-  get 'staff' => 'pages#staff'
+  get 'staff' => "pages#staff"
+
+  get 'contact' => "pages#contact"
+
+  resources :contact_forms
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

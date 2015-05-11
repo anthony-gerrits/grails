@@ -45,6 +45,7 @@ group :development, :test do
 
 gem 'font-awesome-rails'
 gem 'simple_form'
+gem 'mail_form'
 gem 'devise'
 end
 
